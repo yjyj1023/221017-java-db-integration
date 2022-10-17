@@ -20,6 +20,9 @@ public class UserDao {
         ps.setString(2,"YeonJae");
         ps.setString(3,"1123");
 
+        int status = ps.executeUpdate();
+        System.out.println(status);
+
         ps.executeUpdate();
         ps.close();
         c.close();
